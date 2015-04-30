@@ -46,6 +46,11 @@ import exceptions.TimeFormatException;
  * For each possibility throw a TimeFormatException with the correct message stating the user error.
  * 
  */
+/**
+ * This class will convert a given 24-hour standard time to a 12-hour time, handling exceptions and looping until the user wants to end, once the user says so the whole program is exited
+ * @author Ylva
+ *
+ */
 public class TimeConversion {
 	/**
 	 * This constructor is all that should be runned in this class.

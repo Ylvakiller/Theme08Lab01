@@ -16,7 +16,7 @@ public class TimeFormatException extends Exception {
 	 * Default constructor
 	 */
 	public TimeFormatException() {
-		super("The time is of an incorrect format!");
+		super("The time is of an incorrect format.");
 	}
 	
 	public TimeFormatException(String arg0) {
@@ -31,8 +31,7 @@ public class TimeFormatException extends Exception {
 		super(arg0, arg1);
 	}
 
-	public TimeFormatException(String arg0, Throwable arg1, boolean arg2,
-			boolean arg3) {
+	public TimeFormatException(String arg0, Throwable arg1, boolean arg2, boolean arg3) {
 		super(arg0, arg1, arg2, arg3);
 	}
 
