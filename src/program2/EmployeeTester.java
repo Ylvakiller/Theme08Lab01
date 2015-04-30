@@ -39,7 +39,8 @@ public class EmployeeTester {
 			try {
 				ssn = Employee.obtainSSN(ssnString);
 			} catch (SSNLengthException | SSNCharacterException e) {
-				System.out.println(e.getMessage());
+				System.err.println(e.getMessage());
+				System.out.println();
 			}finally{
 				employeeList.add(new Employee(employeeName, ssn));//Add the employee to the list
 			}
@@ -48,6 +49,7 @@ public class EmployeeTester {
 		int i = 0;
 		while (i<employeeList.size()){
 			System.out.println("Name: " + employeeList.get(i).getName() + "\t\t\tSSN: " + employeeList.get(i).getSSN());
+			i++;
 		}
 	}
 

@@ -68,7 +68,7 @@ public class TimeConversion {
 					time = TimeConversion.processTimeFormat(time);
 					System.out.println("That is the same as\n" + time);
 				} catch (TimeFormatException e) {
-					System.out.println(e.getMessage());
+					System.err.println(e.getMessage());
 				}finally{
 				}
 				System.out.println("If you want to run again enter the y key, if not enter the n key.");
