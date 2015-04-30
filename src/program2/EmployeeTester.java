@@ -38,11 +38,11 @@ public class EmployeeTester {
 			}
 			try {
 				ssn = Employee.obtainSSN(ssnString);
+				employeeList.add(new Employee(employeeName, ssn));//Add the employee to the list
 			} catch (SSNLengthException | SSNCharacterException e) {
 				System.err.println(e.getMessage());
-				System.out.println();
+				System.out.println("Please enter the data from this employee again");
 			}finally{
-				employeeList.add(new Employee(employeeName, ssn));//Add the employee to the list
 			}
 		}
 		System.out.println("\nYou have entered " + employeeList.size() + " employees, I will print the data out for all those employees:\n");
