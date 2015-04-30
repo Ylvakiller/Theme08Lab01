@@ -2,6 +2,7 @@ package program2;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 import exceptions.SSNCharacterException;
 import exceptions.SSNLengthException;
 /*
@@ -82,6 +83,8 @@ public class EmployeeTester {
 			System.out.println("Employee Number: "+ (i+1) +"\t\tName: " + employeeList.get(i).getName() + "\t\t\tSSN: " + employeeList.get(i).getSSN());
 			i++;
 		}
+		System.out.println("\nEnding program.");
+		System.exit(0);
 	}
 
 }
