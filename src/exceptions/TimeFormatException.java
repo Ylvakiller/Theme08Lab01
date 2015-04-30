@@ -7,7 +7,7 @@ public class TimeFormatException extends Exception {
 
 	/**
 	 * The reasons why I have this here can be read on the following page:
-	 * http://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
+	 * http://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it (accessed on 30-04-2015)
 	 * I however must admit that I not extremely clear why this is important to have, I am however clear that this is an import field to have and therefore I have included it
 	 */
 	private static final long serialVersionUID = 1L;
