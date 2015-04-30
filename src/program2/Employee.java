@@ -74,7 +74,7 @@ public class Employee extends Person {
 	 * @throws SSNLengthException This exception is thrown if the SSN not including spaces or dashes is not of length 9
 	 * @throws SSNCharacterException This exception is thrown if the SSN not including spaces or dashes contains non digit characters
 	 */
-	public static int getSSN(String SSN) throws SSNLengthException, SSNCharacterException{
+	public static int obtainSSN(String SSN) throws SSNLengthException, SSNCharacterException{
 		SSN = SSN.replace(" ", "");//take out the spaces
 		SSN = SSN.replace("-", "");//take out the dashes
 		if (SSN.length()>9){

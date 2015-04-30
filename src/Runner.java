@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import program1.TimeConversion;
+import program2.EmployeeTester;
 
 /**
  * This is a simple class to run either of the 2 programs in the assignment
@@ -13,7 +14,7 @@ public class Runner {
 	 * You can set the input to 1 or 2 to test without the menu if you want
 	 */
 	public static void main(String[] args) {
-		int input = 1;
+		int input = 2;
 		if (input==0){
 			System.out.println("Please type the number of the program that you want to run.");
 			System.out.println("Option 1, Time Exception program.");
@@ -23,10 +24,11 @@ public class Runner {
 			input = keyboard.nextInt();
 		}
 		switch (input){
-		case 1: System.out.println("Running the Time Exception program.");
-		TimeConversion temp = new TimeConversion();
+		case 1: System.out.println("Running the Time Exception program.\n");
+		TimeConversion timeTest = new TimeConversion();
 		break;
-		case 2: System.out.println("Running the Employee double Exception program");
+		case 2: System.out.println("Running the Employee double Exception program\n");
+		EmployeeTester employeeTest = new EmployeeTester();
 		break;
 		default: System.err.println("Incorrect input, stoppping program | Exit code 1");
 		break;
