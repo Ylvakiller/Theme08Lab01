@@ -7,14 +7,19 @@ import java.util.Scanner;
  */
 public class Runner {
 	/**
-	 * The goal of this method is to make this the only method that needs to be runned for all the testing purposes
+	 * The goal of this method is to make this the only method that needs to be run for all the testing purposes
+	 * You can set the input to 1 or 2 to test without the menu if you want
 	 */
 	public static void main() {
-		System.out.println("Please type the number of the program that you want to run.");
-		System.out.println("Option 1, Time Exception program.");
-		System.out.println("Option 2, Employee double Exception program.");
-		Scanner keyboard = new Scanner(System.in);
-		int input = keyboard.nextInt();
+		int input = 0;
+		if (input!=0){
+			System.out.println("Please type the number of the program that you want to run.");
+			System.out.println("Option 1, Time Exception program.");
+			System.out.println("Option 2, Employee double Exception program.");
+			Scanner keyboard = new Scanner(System.in);
+			input = keyboard.nextInt();
+			keyboard.close();
+		}
 		switch (input){
 		case 1: System.out.println("Running the Time Exception program.");
 		break;
@@ -23,7 +28,6 @@ public class Runner {
 		default: System.err.println("Incorrect input, stoppping program | Exit code 1");
 		break;
 		}
-		keyboard.close();
 		System.exit(1);
 
 	}
