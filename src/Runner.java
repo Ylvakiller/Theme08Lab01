@@ -14,7 +14,7 @@ public class Runner {
 	 * You can set the input to 1 or 2 to test without the menu if you want
 	 */
 	public static void main(String[] args) {
-		int input = 2;
+		int input = 0;
 		if (input==0){
 			System.out.println("Please type the number of the program that you want to run.");
 			System.out.println("Option 1, Time Exception program.");
