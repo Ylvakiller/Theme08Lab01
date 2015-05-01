@@ -51,12 +51,12 @@ public class EmployeeTester {
 		while (true){
 			System.out.println("You can stop entering data at any time by inputting just a n."); //This has as limitation that the name cannot be "n", in any normal program this would be replaced by a button
 			System.out.println("Please enter the name of your employee:");
-			String employeeName = keyboard.next();
+			String employeeName = keyboard.nextLine();
 			if (employeeName.equals("n")){
 				break;
 			}
 			System.out.println("Now enter the SSN of this employee");
-			String ssnString = keyboard.next();
+			String ssnString = keyboard.nextLine();
 			int ssn = 0;
 			if (ssnString.equals("n")){
 				break;

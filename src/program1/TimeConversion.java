@@ -63,7 +63,7 @@ public class TimeConversion {
 		while (running){
 			while (true){
 				System.out.println("Please give the time in a 24hour format");
-				String time = keyboard.next();
+				String time = keyboard.nextLine();
 				try {
 					time = TimeConversion.processTimeFormat(time);
 					System.out.println("That is the same as\n" + time);
@@ -72,7 +72,7 @@ public class TimeConversion {
 				}finally{
 				}
 				System.out.println("If you want to run again enter the y key, if not enter the n key.");
-				String again =keyboard.next();
+				String again =keyboard.nextLine();
 				if (again.equals("y")||again.equals("Y")){
 					break;
 				}else if(again.equals("n")||again.equals("N")){
